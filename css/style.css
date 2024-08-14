@@ -1,0 +1,445 @@
+:root {
+    --them-color: #18d26e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Tienne';
+}
+
+.pay {
+    padding: 100px 0;
+}
+
+.about-title h2::after,
+.services-title h2::after,
+.skills-title h2::after,
+.facts-title h2::after,
+.protfolio-title h2::after,
+.client-title h2::after,
+.testimonials-title h2::after,
+.team-title h2::after,
+.contact-title h2::after {
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    top: 45px;
+    left: 50%;
+    width: 130px;
+    height: 3px;
+    background-color: #666666;
+}
+
+.about-title h2::before,
+.services-title h2::before,
+.skills-title h2::before,
+.facts-title h2::before,
+.protfolio-title h2::before,
+.client-title h2::before,
+.testimonials-title h2::before,
+.team-title h2::before,
+.contact-title h2::before {
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    top: 43px;
+    z-index: 9;
+    left: 50%;
+    width: 40px;
+    height: 7px;
+    background-color: var(--them-color);
+}
+
+/* HEADER  */
+
+.logo {
+    border-color: var(--them-color) !important;
+}
+
+nav ul li:first-child a {
+    color: var(--them-color) !important;
+    transition: all 0.2s linear;
+}
+
+nav ul li a:hover {
+    color: var(--them-color) !important;
+}
+
+/* BENEER  */
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/1.jpg'), linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733));
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url('../images/2.jpg'), linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733));
+}
+
+.img3 {
+    background-image: url('../images/3.jpg'), linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733));
+}
+
+.img4 {
+    background-image: url('../images/4.jpg'), linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733));
+}
+
+.img5 {
+    background-image: url('../images/5.jpg'), linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733));
+}
+
+.benner .carousel-item a {
+    background-color: var(--them-color);
+}
+
+.benner .carousel-item a:hover {
+    color: var(--them-color) !important;
+    background-color: antiquewhite;
+}
+
+/* fratures  */
+
+.fratures-itme p {
+    font-size: 14px;
+}
+
+.fratures-itme i {
+    color: var(--them-color);
+}
+
+.fratures :nth-child(2) .fratures-itme {
+    background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);
+    padding-top: 20px;
+}
+
+.fratures :nth-child(3) .fratures-itme i {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+/* ABOUT US  */
+
+.about {
+    background-image: url('../images/about-bg.jpg'), linear-gradient(rgba(255, 255, 255, 0.811), rgba(255, 255, 255, 0.811));
+    background-blend-mode: lighten;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.about .card .card-body h5:hover {
+    color: var(--theme-color);
+}
+
+.about .card .card-body p {
+    font-size: 15px;
+}
+
+.about-contant .card-body i {
+    width: 60px;
+    height: 60px;
+    background-color: var(--them-color) !important;
+    color: #ffffff;
+}
+
+.about-contant .card:hover .card-body i {
+    background-color: #ffffff !important;
+    color: var(--them-color) ;
+}
+
+.about-contant h4:hover {
+    color: var(--them-color) !important;
+}
+
+.about-contant h4 {
+    transition: all 0.2s linear;
+}
+
+/* services */
+
+.services-icon i {
+    color: var(--them-color);
+}
+
+.services-icon h5:hover {
+    color: var(--them-color) !important;
+}
+
+.services-icon h5 {
+    transition: all 0.2s linear;
+}
+
+/* ACTION */
+
+.action {
+    background-image: url('../images/call-to-action-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.action-title .btn:hover {
+    background-color: var(--them-color) !important;
+    color: white;
+    border-color: var(--them-color) !important;
+}
+
+/* FACTS */
+
+.facts {
+    background-image: url('../images/facts-bg.jpg'), linear-gradient(rgba(255, 255, 255, 0.888), rgba(255, 255, 255, 0.888));
+    background-blend-mode: lighten;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.factu-con h3 {
+    color: var(--them-color) !important;
+}
+
+/* PORTFOLIO */
+
+.portfolio a {
+    transition: all 0.2s linear;
+}
+
+.portfolio a:hover {
+    background-color: var(--them-color) !important;
+    color: white !important;
+}
+
+.portfolio-line .bg {
+    background-color: var(--them-color) !important;
+}
+
+.portfolio .card-body h4 {
+    transition: all 0.s linear;
+}
+
+.portfolio .card-body h4:hover {
+    color: var(--them-color);
+}
+
+.portfolio-overlay i,
+.team-overlay i {
+    width: 50px;
+    height: 50px;
+    flex-direction: row;
+    line-height: 50px;
+    transition: all 0.2s linear;
+}
+
+.portfolio-overlay,
+.team-overlay {
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.637);
+    transition: all 0.2s linear
+}
+
+.portfolio-img:hover .portfolio-overlay,
+.team-img:hover .team-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.portfolio-overlay i:hover {
+    background-color: var(--them-color) !important;
+    color: white !important;
+}
+
+.portfolio-img:hover .portfolio-overlay i {
+    margin: 0 10px;
+}
+
+/* CLIENTS  */
+
+.clients .clients-cont .client-img {
+    background-color: #666666;
+    color: black;
+}
+
+.clients .clients-cont .client-img:hover {
+    background-color: rgb(0, 255, 13);
+    color: red;
+}
+
+.carousel-indicators .active {
+    background-color: var(--them-color) !important;
+}
+
+.carousel-indicators {
+    bottom: -66px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    border: 1px solid var(--them-color) !important;
+}
+
+.client .carousel-item .carousel-img:hover {
+    opacity: 1 !important;
+}
+
+.client .carousel-item .carousel-img {
+    transition: all 0.2s linear;
+}
+
+/* TESTIMONIALS  */
+
+.testimonials-img {
+    width: 15%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.473) !important;
+    border-radius: 20%;
+}
+
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.473) !important;
+    border-radius: 20%;
+}
+
+/* TEAM */
+
+.team-overlay i:hover {
+    color: var(--them-color) !important;
+}
+
+.team-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team-img {
+    overflow: hidden;
+}
+
+.team .team-img .team-overlay {
+    transition: all 0.3s linear;
+    transform: translateY(-30px);
+}
+
+.team .team-img .team-overlay:hover {
+    transform: translateY(0px);
+}
+
+/* CONTACT US */
+
+.contact-us i {
+    color: var(--them-color);
+}
+
+.border-success {
+    border-color: rgba(148, 141, 141, 0.475) !important;
+}
+
+.contact-btn .btn {
+    border-radius: 0px !important;
+    padding: 10px 25px;
+}
+
+/* FOOTER */
+
+hr {
+    margin: 0rem 0 !important;
+}
+
+.footer-contant ul li a {
+    transition: all 0.1s linear;
+}
+
+.footer-contant ul li a:hover {
+    color: var(--them-color);
+}
+
+.footer-icon i:hover {
+    background-color: var(--them-color) !important;
+}
+
+.footer-icon i {
+    font-size: 20px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    padding: 10px;
+    transition: all 0.1s linear;
+}
+
+.input-group .btn {
+    background-color: var(--them-color) !important;
+}
+
+.footer-hk h6::after {
+    content: '';
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -7%;
+    background-color: var(--them-color) !important;
+}
+
+.footer-copy-link {
+    width: 100%;
+}
+
+.footer-copy-link p a {
+    font-size: 18px;
+    margin-left: 10px;
+    color: var(--them-color) !important;
+}
+
+/* BACK-TO-TOP */
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    background-color: var(--them-color);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    transition: all 0.5s linear;
+}
+
+.back-to-top a {
+    color: white;
+    font-size: 20px;
+}
